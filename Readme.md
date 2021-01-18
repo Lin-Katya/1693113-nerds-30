@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Екатерина Раздобреева](https://up.htmlacademy.ru/htmlcss/30/user/1693113).
-* Наставник: `Ирина Малиновская`.
+* Наставник: `[Ирина Малиновская](https://htmlacademy.ru/profile/irina-malinovskaya)`.
 
 ---
 
