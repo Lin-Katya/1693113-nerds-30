@@ -15,19 +15,21 @@
 
    <header class="main-header">
      <nav class="main-navigation">
-       <a class="main-header-logo">
+       <a href="index.html" class="main-header-logo link">
         <img src="img/nerds-logo.svg" width="159.87" height="65.02" alt="Логотип дизайн-студии «Нёрдс»">
        </a>
        <ul class="site-navigation">
-         <li class="nav-item"><a href="blank.html">СТУДИЯ</a></li>
-         <li class="nav-item"><a href="blank.html">КЛИЕНТЫ</a></li>
-         <li class="nav-item"><a href="catalog.html">МАГАЗИН</a></li>
-         <li class="nav-item"><a href="blank.html">КОНТАКТЫ</a></li>
-       </ul>
-       <a href="blank.html" class="cart-link">
-        <img src="img/cart-icon.svg" width="15" height="15" alt="Иконка корзина" class="cart-icon">
-        КОРЗИНА
-       </a>
+        <li class="nav-item"><a class="curent" href="blank.html">СТУДИЯ</a></li>
+        <li class="nav-item"><a class="curent" href="blank.html">КЛИЕНТЫ</a></li>
+        <li class="nav-item"><a class="curent" href="catalog.html">МАГАЗИН</a></li>
+        <li class="nav-item"><a class="curent" href="blank.html">КОНТАКТЫ</a></li>
+      </ul>
+      <div class="user-navigation">
+        <a href="blank.html" class="cart-link curent">
+          <img src="img/cart-icon.svg" width="15" height="15" alt="Иконка корзина" class="cart-icon">
+          КОРЗИНА
+        </a>
+       </div>
      </nav>
    </header>
 
@@ -56,7 +58,7 @@
       </ul>
     </section>
     <div class="discount">
-      <p>Давайте дружить, это выгодно!</p>
+      <p class="discount-appeal">Давайте дружить, это выгодно!</p>
       <p class="discount-proposal">Скидка 10% для друзей из социальных сетей.</p>
     </div>
     </footer>
@@ -66,19 +68,19 @@
       <h3>Напишите нам</h3>
       <button type="button" class="popup-close">Закрыть</button>
       <form action="https://echo.htmlacademy.ru" method="post">
-        <p>
+        <p class="popup-item">
         <label for="name">Ваше имя:</label><br>
         <input id="name" type="text" name="name" placeholder="Имя Фамилия">
         </p>
-        <p>
+        <p class="popup-item">
         <label for="mail">Ваш email:</label><br>
         <input id="mail" type="email" name="email" placeholder="email@example.com">
         </p>
-        <p>
+        <p class="popup-item">
         <label for="letter">Текст письма:</label><br>
         <textarea id="letter" name="letter" rows="3">В свободной форме</textarea>
         </p>
-        <input type="submit" value="Отправить" class="button">
+        <input type="submit" value="Отправить" class="button popup">
        </form>
     </section>
    </body>

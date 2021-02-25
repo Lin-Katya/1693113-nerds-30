@@ -19,20 +19,22 @@
         <img src="img/nerds-logo.svg" width="159.87" height="65.02" alt="Логотип дизайн-студии «Нёрдс»">
        </a>
        <ul class="site-navigation">
-         <li class="nav-item"><a href="blank.html">СТУДИЯ</a></li>
-         <li class="nav-item"><a href="blank.html">КЛИЕНТЫ</a></li>
-         <li class="nav-item"><a href="catalog.html">МАГАЗИН</a></li>
-         <li class="nav-item"><a href="blank.html">КОНТАКТЫ</a></li>
+         <li class="nav-item"><a class="curent" href="blank.html">СТУДИЯ</a></li>
+         <li class="nav-item"><a class="curent" href="blank.html">КЛИЕНТЫ</a></li>
+         <li class="nav-item"><a class="curent" href="catalog.html">МАГАЗИН</a></li>
+         <li class="nav-item"><a class="curent" href="blank.html">КОНТАКТЫ</a></li>
        </ul>
-       <a href="blank.html" class="cart-link">
-        <img src="img/cart-icon.svg" width="15" height="15" alt="Иконка корзина" class="cart-icon">
-        КОРЗИНА
-       </a>
+       <div class="user-navigation">
+         <a href="blank.html" class="cart-link curent">
+           <img src="img/cart-icon.svg" width="15" height="15" alt="Иконка корзина" class="cart-icon">
+           КОРЗИНА
+         </a>
+        </div>
      </nav>
    </header>
 
    <main class="container">
-     <section>
+     <section class="slogan">
        <h2>Долго, дорого, <br> скрупулезно.</h2>
        <p>Математически выверенный дизайн <br> для вашего сайта или мобильного приложения.</p>
        <a href="blank.html" class="button">Узнать больше</a>
@@ -50,33 +52,39 @@
        <ul class="list-services">
          <li class="list-services-item">
            <img src="img/illustration-web.jpg" width="300" height="146" alt="Иллюстрация веб-сайты">
-           <h3>Веб-сайты</h3>
-           <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-           <a href="blank.html" class="button">ЗАКАЗАТЬ</a>
+           <div class="services-item">
+             <h3>Веб-сайты</h3>
+             <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+             <a href="blank.html" class="button web">ЗАКАЗАТЬ</a>
+           </div>
          </li>
          <li class="list-services-item">
            <img src="img/illustration-app.jpg" width="300" height="146" alt="Иллюстрация приложения">
-           <h3>Приложения</h3>
-           <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-           <a href="blank.html" class="button">ЗАКАЗАТЬ</a>
+           <div class="services-item">
+             <h3>Приложения</h3>
+             <p>Покорите топ-10 приложений в AppStore и Google Play</p>
+             <a href="blank.html" class="button app">ЗАКАЗАТЬ</a>
+           </div>
          </li>
          <li class="list-services-item">
            <img src="img/illustration-presentations.jpg" width="300" height="146" alt="Иллюстрация презентации">
-           <h3>Презентации</h3>
-           <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-           <a href="blank.html" class="button">ЗАКАЗАТЬ</a>
-        </li>
+           <div class="services-item">
+             <h3>Презентации</h3>
+             <p>Вы даже не подозреваете, насколько вы изумительны!</p>
+             <a href="blank.html" class="button presentation">ЗАКАЗАТЬ</a>
+           </div>
+         </li>
        </ul>
      </section>
      <section class="about">
        <h2>О дизайн-студии «Нёрдс»</h2>
-       <p>Мы — маленькая, но гордая <br> дизайн-студия из Краснодара.</p>
-       <p>
+       <p class="intro">Мы — маленькая, но гордая <br> дизайн-студия из Краснодара.</p>
+       <p class="our-values">
        Исповедуем принципы минимализма и чистоты.
        Ставим математический расчет <br> превыше креатива.
        Работаем не покладая рук, как роботы.
        </p>
-       <p>Выполняем заказы на разработку:</p>
+       <p class="list-orders-title">Выполняем заказы на разработку:</p>
        <ul class="list-orders">
          <li class="list-orders-item">Веб-сайтов любой сложности</li>
          <li class="list-orders-item">Мобильных приложений для iOS и Android</li>
@@ -102,8 +110,8 @@
     </section>
     <section class="clients-list">
      <h2>Клиенты</h2>
-     <ul>
-        <li class="clients-item">
+     <ul class="clients-item">
+        <li>
           <a href="https://htmlacademy.ru/intensive/htmlcss">
           <img src="img/clients/HTMLacademy.svg" width="199" height="67.82" alt="Логотип «HTML academy»">
           </a>
@@ -148,7 +156,7 @@
      </ul>
    </section>
    <div class="discount">
-     <p>Давайте дружить, это выгодно!</p>
+     <p class="discount-appeal">Давайте дружить, это выгодно!</p>
      <p class="discount-proposal">Скидка 10% для друзей из социальных сетей.</p>
    </div>
    </footer>
@@ -158,19 +166,19 @@
      <h3>Напишите нам</h3>
      <button type="button" class="popup-close">Закрыть</button>
      <form action="https://echo.htmlacademy.ru" method="post">
-       <p>
+       <p class="popup-item">
        <label for="name">Ваше имя:</label><br>
        <input id="name" type="text" name="name" placeholder="Имя Фамилия">
        </p>
-       <p>
+       <p class="popup-item">
        <label for="mail">Ваш email:</label><br>
        <input id="mail" type="email" name="email" placeholder="email@example.com">
        </p>
-       <p>
+       <p class="popup-item">
        <label for="letter">Текст письма:</label><br>
        <textarea id="letter" name="letter" rows="3">В свободной форме</textarea>
        </p>
-       <input type="submit" value="Отправить" class="button">
+       <input type="submit" value="Отправить" class="button popup">
       </form>
    </section>
   </body>

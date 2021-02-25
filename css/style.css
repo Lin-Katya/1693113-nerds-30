@@ -1,0 +1,525 @@
+/* Fonts */
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/roboto.woff2") format("woff2"),
+  url("../fonts/roboto.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/robotobold.woff2") format("woff2"),
+  url("../fonts/robotobold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/robotomedium.woff2") format("woff2"),
+  url("../fonts/robotomedium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* Variables */
+
+:root {
+  --button-light-grey: #EEEEEE;
+  --button-medium-grey: #DFDFDF;
+  --button-dark-grey: #D5D5D5;
+
+  --popup-basic: #D7DCDE;
+  --popup-hover: #B4B9BB;
+
+  --basic-light-red: #FB565A;
+  --basic-medium-red: #E74246;
+  --basic-dark-red: #D7373B;
+
+
+  --basic-light-green: #00CA74;
+  --basic-medium-green: #00BC6C;
+  --basic-dark-green: #00AA62;
+
+  --basic-light-yellow: #EFC849;
+  --basic-medium-yellow: #EAB534;
+  --basic-dark-yellow: #E5A722;
+
+  /* Text */
+
+  --basic-black: #000000;
+  --basic-extra-dark: #283136;
+  --basic-grey: #666666;
+  --basic-white: #ffffff;
+}
+
+/* Global */
+
+body {
+  min-width: 960px;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--basic-extra-dark);
+  background-color: var(--basic-white);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Button */
+
+.button {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--basic-white);
+}
+.button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+/* Main navigation */
+
+.main-header-logo.link img:hover,
+.main-header-logo.link img:focus {
+  opacity: 70%;
+}
+.main-header-logo.link img:active {
+  opacity: 30%;
+}
+
+.main-navigation {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--basic-black);
+  background-color: transparent;
+}
+.main-navigation a {
+  text-decoration: none;
+}
+.main-header {
+  background-color: var(--button-light-grey);
+}
+.site-navigation {
+  list-style: none;
+}
+
+/* User navigation */
+
+.site-navigation a,
+.user-navigation a {
+  color: var(--basic-black);
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus {
+  color: var(--basic-light-red);
+}
+
+.site-navigation a:active,
+.user-navigation a:active {
+  color: var(--basic-black);
+  opacity: 30%;
+}
+
+/* Galery and slogan */
+
+.slogan,
+.slider {
+  background-color: var(--button-light-grey);
+}
+
+.slogan h2 {
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+  color: var(--basic-black);
+}
+
+.slogan .button {
+  background-color: var(--basic-light-red);
+}
+.slogan .button:hover,
+.slogan .button:focus {
+  background-color: var(--basic-medium-red);
+}
+.slogan .button:active {
+  background-color: var(--basic-dark-red);
+}
+
+
+/* Servises */
+
+.list-services {
+  list-style: none;
+}
+
+.list-services-item {
+  text-align: center;
+}
+
+.services-item {
+  text-align: left;
+}
+
+.list-services-item h3 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--basic-black);
+}
+
+  /* Red web button */
+
+.button.web {
+  background-color: var(--basic-light-red);
+}
+.button.web:hover,
+.button.web:focus {
+  background-color: var(--basic-medium-red);
+}
+.button.web:active {
+  background-color: var(--basic-dark-red);
+}
+
+  /* Green app button */
+
+.button.app {
+  background-color: var(--basic-light-green);
+}
+.button.app:hover,
+.button.app:focus {
+  background-color: var(--basic-medium-green);
+}
+.button.app:active {
+  background-color: var(--basic-dark-green);
+}
+
+ /* Yellow presentation button */
+
+.button.presentation {
+  background-color: var(--basic-light-yellow);
+}
+.button.presentation:hover,
+.button.presentation:focus {
+  background-color: var(--basic-medium-yellow);
+}
+.button.presentationn:active {
+  background-color: var(--basic-dark-yellow);
+}
+
+/* About */
+
+.about .intro {
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 45px;
+  color: var(--basic-black);
+}
+
+.about .list-orders-title {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.list-orders {
+  list-style: none;
+}
+
+.features caption {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--basic-black);
+}
+
+table .feature-value {
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 64px;
+  color: var(--basic-black);
+}
+table .feature-item {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+/* CLients */
+
+.clients-item {
+  list-style: none;
+}
+
+/* Contacts */
+.contacts p {
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--basic-grey);
+}
+.contacts h3 {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--basic-black);
+}
+.contacts-phone {
+  color:inherit;
+  text-decoration: none;
+}
+.contacts button {
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  width: 219px;
+  height: 50px;
+  border-radius: 2px;
+  background-color: var(--basic-light-red);
+}
+.contacts button,
+.contacts button:focus {
+  background-color: var(--basic-medium-red);
+}
+.contacts button:active {
+  background-color: var(--basic-dark-red);
+}
+
+/* Socials */
+
+.socials-list ul {
+list-style: none;
+}
+.socials-list li {
+text-decoration: none;
+}
+.social-button {
+  color: inherit;
+}
+
+.social-button:hover,
+.social-button:focus {
+  background-color: var(--basic-medium-red);
+}
+.social-button:active {
+  background-color: var(--basic-dark-red);
+}
+.discount .discount-appeal {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 36px;
+  color: var(--basic-black);
+}
+.discount .discount-proposal {
+font-weight: normal;
+font-size: 16px;
+line-height: 22px;
+color: #444444;
+}
+/* Popup */
+
+.popup h3{
+ font-weight: bold;
+ font-size: 45px;
+ line-height: 53px;
+ color: var(--basic-black)
+}
+.popup label{
+  line-height: 18px;
+  font-weight: bold;
+  color: var(--basic-black);
+}
+.popup-item input,
+.popup-item textarea {
+  font: inherit;
+  line-height: 18px;
+  color: #444444;
+  background-color: transparent;
+  border-radius: 2px;
+  border: 2px solid var(--popup-basic);
+}
+.popup-item input:hover,
+.popup-item textarea:hover {
+  border: 2px solid var(--popup-hover);
+}
+.popup-item input:focus,
+.popup-item textarea:focus {
+  border: 2px solid var(--basic-black);
+}
+.popup-item input:invalid,
+.popup-item textarea:invalid {
+  border: 2px solid var(--basic-medium-red);
+}
+input.button.popup,
+input.button.popup:focus {
+  background-color: var(--basic-medium-red);
+}
+input.button.popup:active {
+  background-color: var(--basic-dark-red);
+}
+input.button.popup {
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  width: 259px;
+  height: 50px;
+  border-radius: 2px;
+  background-color: var(--basic-light-red);
+}
+
+/* Catalog */
+
+.catalog-name {
+  background-color: var(--button-light-grey);
+}
+.catalog-name h1 {
+ font-weight: 500;
+ font-size: 55px;
+ line-height: 55px;
+ color: var(--basic-black);
+ text-align: center;
+}
+
+/* Catalog filter */
+.catalog-filter {
+  line-height: 20px;
+}
+.catalog-filter legend {
+ font-weight: bold;
+ font-size: 18px;
+ line-height: 30px;
+ text-transform: uppercase;
+ color: var(--basic-black);
+}
+.catalog-filter ul {
+ list-style: none;
+}
+.form-filter .button {
+ color: var(--basic-black);
+ border: none;
+ text-align: center;
+ text-decoration: none;
+ width: 260px;
+ height: 50px;
+ border-radius: 3px;
+ background-color: var(--button-light-grey);
+}
+.form-filter .button:focus,
+.form-filter .button:hover {
+  background-color: var(--button-medium-grey);
+}
+.form-filter .button:active {
+  background-color: var(--button-dark-grey);
+}
+
+/* Catalog sort */
+
+.catalog-sort h3 {
+ font-weight: bold;
+ font-size: 18px;
+ line-height: 30px;
+ text-transform: uppercase;
+ color: var(--basic-black);
+}
+.catalog-sort ul {
+  list-style: none;
+}
+.catalog-sort li {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 1, 0.3);
+}
+.catalog-sort a {
+  color: var(--basic-black);
+  text-decoration: none;
+}
+.catalog-sort li:active {
+  color: var(--basic-black);
+}
+li.more-to-less:active {
+  color: var(--basic-black);
+}
+li.less-to-more:active {
+  color: var(--basic-black);
+}
+
+/* Catalog cards */
+
+.catalog-cards a {
+  text-decoration: none;
+}
+.catalog-cards ul {
+  list-style: none;
+}
+.catalog-cards-item {
+  text-align: center;
+}
+.catalog-cards-item:focus,
+.catalog-cards-item:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1)
+}
+.catalog-cards-item a {
+  line-height: 18px;
+  color: var(--basic-grey);
+}
+.catalog-cards-item h3 {
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--basic-black);
+}
+.catalog-cards-item h3:focus,
+.catalog-cards-item h3:hover {
+  color: var(--basic-light-red);
+}
+/* у меня какие проблемы с настройкой прозрачности текста */
+.catalog-cards-item h3:active {
+  opacity: rgba(0, 0, 0, 1, 0.3);
+}
+.catalog-cards-item .button {
+  width: 200px;
+  height: 50px;
+  border: none;
+  text-align: center;
+  border-radius: 3px;
+  background-color: var(--basic-light-red);
+}
+.catalog-cards-item .button:focus,
+.catalog-cards-item .button:hover {
+  background-color: var(--basic-medium-red);
+}
+.catalog-cards-item .button:active {
+  color: var(--basic-white);
+  background-color: var(--basic-dark-red);
+}
+/* Pagination */
+
+.pagination-list {
+  list-style: none;
+}
+
+.pagination-item a {
+  color: var(--basic-black);
+  background-color: var(--button-light-grey);
+}
+
+.pagination-item a:hover,
+.pagination-item a:focus {
+  background-color: var(--button-medium-grey);
+}
+.pagination-item a:active {
+  background-color: var(--button-dark-grey);
+}
+/* как задать стили для активной? ;/
