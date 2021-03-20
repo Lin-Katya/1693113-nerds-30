@@ -14,48 +14,54 @@
   <body class="page-body">
 
    <header class="main-header">
-     <nav class="main-navigation">
-       <div class="main-navigation-wrapper">
-         <a class="main-header-logo">
-           <img src="img/nerds-logo.svg" width="159.87" height="65.02" alt="Логотип дизайн-студии «Нёрдс»">
-         </a>
-         <ul class="site-navigation">
-           <li class="nav-item"><a class="curent" href="blank.html">СТУДИЯ</a></li>
-           <li class="nav-item"><a class="curent" href="blank.html">КЛИЕНТЫ</a></li>
-           <li class="nav-item"><a class="curent" href="catalog.html">МАГАЗИН</a></li>
-           <li class="nav-item"><a class="curent" href="blank.html">КОНТАКТЫ</a></li>
-         </ul>
-         <div class="user-navigation">
-           <a href="blank.html" class="cart-link">
-             КОРЗИНА
-           </a>
-          </div>
-        </div>
+     <nav class="main-navigation container">
+       <a class="main-header-logo">
+         <img src="img/nerds-logo.svg" width="160" height="65.02" alt="Логотип дизайн-студии «Нёрдс»">
+       </a>
+       <ul class="site-navigation">
+         <li class="nav-item"><a class="curent" href="blank.html">СТУДИЯ</a></li>
+         <li class="nav-item"><a class="curent" href="blank.html">КЛИЕНТЫ</a></li>
+         <li class="nav-item"><a class="curent" href="catalog.html">МАГАЗИН</a></li>
+         <li class="nav-item"><a class="curent" href="blank.html">КОНТАКТЫ</a></li>
+       </ul>
+       <a href="blank.html" class="user-navigation cart-link">
+         <span>КОРЗИНА</span>
+       </a>
       </nav>
    </header>
 
    <main class="main-page">
-     <div class="slider-slogan-section">
+     <section class="slider-slogan">
        <div class="container">
-         <div class="slider-slogan">
-           <section class="slogan">
-             <h2>Долго, дорого, <br> скрупулезно.</h2>
-             <p>Математически выверенный дизайн <br> для вашего сайта или мобильного приложения.</p>
-             <a href="blank.html" class="button">Узнать больше</a>
-           </section>
-           <section class="slider">
-             <figure class="slider-content">
-               <a href="#">
-                 <img src="img/nerds-index-slide1.png" width="760" height="431" alt="Слайдер 1" class="slider-item">
-               </a>
-             </figure>
-           </section>
+         <div class=" slider-image slider-image-1 slider-image-2 slider-image-3">
+           <ul class="slider-list">
+             <li class="slider-item slide slide-current">
+               <h2>Долго, дорого, <br> скрупулезно.</h2>
+               <p>Математически выверенный дизайн <br> для вашего сайта или мобильного приложения.</p>
+               <a href="blank.html" class="button">Узнать больше</a>
+             </li>
+             <li class="slider-item slide">
+               <h2>Долго, дорого, <br> скрупулезно.</h2>
+               <p>Математически выверенный дизайн <br> для вашего сайта или мобильного приложения.</p>
+               <a href="blank.html" class="button">Узнать больше</a>
+             </li>
+             <li class="slider-item slide">
+               <h2>Долго, дорого, <br> скрупулезно.</h2>
+               <p>Математически выверенный дизайн <br> для вашего сайта или мобильного приложения.</p>
+               <a href="blank.html" class="button">Узнать больше</a>
+             </li>
+           </ul>
+           <div class="slider-controls">
+             <button type="button" aria-label="Первый слайд" class="current"></button>
+             <button type="button" aria-label="Второй слайд"></button>
+             <button type="button" aria-label="Третий слайд"></button>
+           </div>
          </div>
-       </div>
-     </div>
-     <div class="container">
-       <h1 class="visually-hidden">Дизайн-студия«Нёрдс»</h1>
-       <section class="services">
+        </div>
+     </section>
+     <h1 class="visually-hidden container">Дизайн-студия«Нёрдс»</h1>
+     <section class="services">
+       <div class="container">
          <h2 class="visually-hidden">Услуги</h2>
          <ul class="list-services">
            <li class="list-services-item">
@@ -83,26 +89,26 @@
              </div>
            </li>
          </ul>
-       </section>
-     </div>
-     <div class="container">
-       <div class="about-features-section">
-         <section class="about">
-           <h2 class="visually-hidden">О дизайн-студии «Нёрдс»</h2>
-           <p class="intro">Мы — маленькая, но гордая <br> дизайн-студия из Краснодара.</p>
-           <p class="our-values">
-           Исповедуем принципы минимализма и чистоты.
-           Ставим математический расчет <br> превыше креатива.
-           Работаем не покладая рук, как роботы.
-           </p>
-           <p class="list-orders-title">Выполняем заказы на разработку:</p>
-           <ul class="list-orders">
-             <li class="list-orders-item">Веб-сайтов любой сложности</li>
-             <li class="list-orders-item">Мобильных приложений для iOS и Android</li>
-             <li class="list-orders-item">Слайдшоу и видео для корпоративных презентаций</li>
-           </ul>
-         </section>
-         <section class="features">
+       </div>
+     </section>
+     <section class="about-features">
+       <div class="container">
+         <div class="about">
+            <h2 class="visually-hidden">О дизайн-студии «Нёрдс»</h2>
+            <p class="intro">Мы — маленькая, но гордая <br> дизайн-студия из Краснодара.</p>
+            <p class="our-values">
+            Исповедуем принципы минимализма и чистоты.
+            Ставим математический расчет <br> превыше креатива.
+            Работаем не покладая рук, как роботы.
+            </p>
+            <p class="list-orders-title">Выполняем заказы на разработку:</p>
+            <ul class="list-orders">
+              <li class="list-orders-item">Веб-сайтов любой сложности</li>
+              <li class="list-orders-item">Мобильных приложений для iOS и Android</li>
+              <li class="list-orders-item">Слайдшоу и видео для корпоративных презентаций</li>
+            </ul>
+          </div>
+         <div class="features">
            <table>
              <h2 class="visually-hidden">Преимущества</h2>
              <img src="img/nerds-colored-logo.png" width="360" height="208" alt="Нёрдс лого" class="features-logo">
@@ -118,83 +124,92 @@
                <td class="feature-item">Минимальная <br> предоплат</td>
              <tr>
            </table>
-         </section>
+          </div>
+       </div >
+      </section>
+     <section class="clients-list">
+       <div class="container">
+         <h2 class="visually-hidden">Клиенты</h2>
+         <ul class="clients-item-list">
+             <li class="clients-item client-htmlacademy">
+               <a href="https://htmlacademy.ru/intensive/htmlcss">
+               <img src="img/clients/HTMLacademy.svg" width="199" height="67.82" alt="Логотип «HTML academy»">
+               </a>
+            </li>
+            <li class="clients-item client-borodinski">
+              <a>
+              <img src="img/clients/Borodinski.svg" width="209" height="90" alt="Логотип «Borodinski»">
+              </a>
+            </li>
+            <li class="clients-item client-pink">
+              <a>
+              <img src="img/clients/Pink.svg" width="185" height="52" alt="Логотип «Pink»">
+              </a>
+            </li>
+            <li class="clients-item client-mishka">
+              <a>
+              <img src="img/clients/Mishka.svg" width="173" height="84" alt="Логотип «Mishka»">
+              </a>
+            </li>
+         </ul>
        </div>
-     </div >
-    <section class="clients-list container">
-     <h2 class="visually-hidden">Клиенты</h2>
-     <ul class="clients-item-list">
-        <li class="clients-item">
-          <a href="https://htmlacademy.ru/intensive/htmlcss">
-          <img src="img/clients/HTMLacademy.svg" width="199" height="67.82" alt="Логотип «HTML academy»">
-          </a>
-       </li>
-       <li class="clients-item">
-         <a>
-         <img src="img/clients/Borodinski.svg" width="209" height="90" alt="Логотип «Borodinski»">
-         </a>
-       </li>
-       <li class="clients-item">
-         <a>
-         <img src="img/clients/Pink.svg" width="185" height="52" alt="Логотип «Pink»">
-         </a>
-       </li>
-       <li class="clients-item">
-         <a>
-         <img src="img/clients/Mishka.svg" width="173" height="84" alt="Логотип «Mishka»">
-         </a>
-       </li>
-     </ul>
-    </section>
-  </main>
-  <footer class="main-footer">
-   <section class="contacts container">
-     <h2 class="visually-hidden">Контактная информация</h2>
-     <h3>NЁRDS DESIGN STUDIO</h3>
-     <p>191186, Санкт-Петербург, <br>
-       ул. Б. Конюшенная, д. 19/8</p>
-     <p>тел. <a class="contacts-phone" href="+78122757575">+7 (812) 275-75-75</a></p>
-     <button type="button" class="button">НАПИШИТЕ НАМ</button>
-   </section>
-   <section class="map">
-     <h2 class="visually-hidden">Карта</h2>
-     <img src="img/map.jpg" width="1440" height="416" alt="Карта с адресом офиса дизайн-студии «Нёрдс»">
-   </section>
-   <div class="main-footer-group container">
-     <section class="socials">
-       <h2 class="visually-hidden">Соцсети</h2>
-       <ul class="socials-list">
-         <li><a href="#"> <img src="img/socials/vk.svg" width="26.01" height="15" alt="иконка Вконтакте" class="social-button"><span class="visually-hidden">Вконтакте</span></a></li>
-         <li><a href="#"> <img src="img/socials/facebook.svg" width="12" height="22" alt="иконка Фейсбук" class="social-button"><span class="visually-hidden">Фейсбук</span></a></li>
-         <li><a href="#"> <img src="img/socials/instagram.svg" width="21" height="21" alt="иконка Инстаграм" class="social-button"><span class="visually-hidden">Инстаграм</span></a></li>
-       </ul>
      </section>
-     <div class="discount">
-       <p class="discount-appeal">Давайте дружить, это выгодно!</p>
-       <p class="discount-proposal">Скидка 10% для друзей из социальных сетей.</p>
+   </main>
+
+   <footer class="main-footer">
+      <section class="map-contacts">
+       <div class="container">
+         <div class="contacts">
+           <div class="contacts-wreapper">
+             <h2 class="visually-hidden">Контактная информация</h2>
+             <h3>NЁRDS DESIGN STUDIO</h3>
+             <p>191186, Санкт-Петербург, <br>
+               ул. Б. Конюшенная, д. 19/8</p>
+             <p class="phone">тел. <a class="contacts-phone" href="+78122757575">+7 (812) 275-75-75</a></p>
+             <button type="button" class="button">НАПИШИТЕ НАМ</button>
+           </div>
+         </div>
+       </div>
+       <div class="map">
+         <h2 class="visually-hidden">Карта</h2>
+         <img src="img/map.jpg" width="1440" height="416" alt="Карта с адресом офиса дизайн-студии «Нёрдс»">
+       </div>
+     </section>
+     <div class="main-footer-group container">
+        <section class="socials">
+          <h2 class="visually-hidden">Соцсети</h2>
+          <ul class="socials-list">
+            <li class="socials-list-item"><a href="#" class="social-button"><img src="img/socials/vk.svg" width="26.01" height="15" alt="иконка Вконтакте"><span class="visually-hidden">Вконтакте</span></a></li>
+            <li class="socials-list-item"><a href="#" class="social-button"><img src="img/socials/facebook.svg" width="12" height="22" alt="иконка Фейсбук"><span class="visually-hidden">Фейсбук</span></a></li>
+            <li class="socials-list-item"><a href="#" class="social-button"><img src="img/socials/instagram.svg" width="21" height="21" alt="иконка Инстаграм"><span class="visually-hidden">Инстаграм</span></a></li>
+          </ul>
+        </section>
+        <div class="discount">
+          <p class="discount-appeal">Давайте дружить, это выгодно!</p>
+          <p class="discount-proposal">Скидка 10% для друзей из социальных сетей.</p>
+        </div>
      </div>
-   </div>
-  </footer>
+   </footer>
 
    <section class="popup container">
      <h2 class="visually-hidden">Форма обратной связи</h2>
      <h3>Напишите нам</h3>
-     <button type="button" class="popup-close">Закрыть</button>
-     <form action="https://echo.htmlacademy.ru" method="post">
-       <p class="popup-item">
-       <label for="name">Ваше имя:</label><br>
-       <input id="name" type="text" name="name" placeholder="Имя Фамилия">
+     <button type="button" class="popup-close" aria-label="Закрыть"></button>
+     <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+       <p class="popup-item popup-item-name">
+         <label for="name">Ваше имя:</label><br>
+         <input id="name" type="text" name="name" placeholder="Имя Фамилия">
        </p>
-       <p class="popup-item">
-       <label for="mail">Ваш email:</label><br>
-       <input id="mail" type="email" name="email" placeholder="email@example.com">
+       <p class="popup-item popup-item-email">
+         <label for="mail">Ваш email:</label><br>
+         <input id="mail" type="email" name="email" placeholder="email@example.com">
        </p>
-       <p class="popup-item">
-       <label for="letter">Текст письма:</label><br>
-       <textarea id="letter" name="letter" rows="3">В свободной форме</textarea>
+       <p class="popup-item popup-item-text">
+         <label for="letter">Текст письма:</label><br>
+         <textarea id="letter" name="letter" rows="3">В свободной форме</textarea>
        </p>
-       <input type="submit" value="Отправить" class="button popup">
-      </form>
-   </section>
+         <button type="button" class="button popup-send" aria-label="Отправить">Отправить</button>
+     </form>
+    </section>
   </body>
 </html>
