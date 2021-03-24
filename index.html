@@ -33,29 +33,33 @@
    <main class="main-page">
      <section class="slider-slogan">
        <div class="container">
-         <div class=" slider-image slider-image-1 slider-image-2 slider-image-3">
-           <ul class="slider-list">
-             <li class="slider-item slide slide-current">
+         <ul class="slider-list">
+           <li class="slider-item slide slide-current">
+             <div class="slider-image slider-image-1">
                <h2>Долго, дорого, <br> скрупулезно.</h2>
                <p>Математически выверенный дизайн <br> для вашего сайта или мобильного приложения.</p>
                <a href="blank.html" class="button">Узнать больше</a>
-             </li>
-             <li class="slider-item slide">
+             </div>
+           </li>
+           <li class="slider-item slide">
+             <div class="slider-image slider-image-2">
                <h2>Долго, дорого, <br> скрупулезно.</h2>
                <p>Математически выверенный дизайн <br> для вашего сайта или мобильного приложения.</p>
                <a href="blank.html" class="button">Узнать больше</a>
-             </li>
-             <li class="slider-item slide">
+             </div>
+           </li>
+           <li class="slider-item slide">
+             <div class=" slider-image slider-image-3">
                <h2>Долго, дорого, <br> скрупулезно.</h2>
                <p>Математически выверенный дизайн <br> для вашего сайта или мобильного приложения.</p>
                <a href="blank.html" class="button">Узнать больше</a>
-             </li>
-           </ul>
-           <div class="slider-controls">
-             <button type="button" aria-label="Первый слайд" class="current"></button>
-             <button type="button" aria-label="Второй слайд"></button>
-             <button type="button" aria-label="Третий слайд"></button>
-           </div>
+             </div>
+           </li>
+         </ul>
+         <div class="slider-controls">
+           <button type="button" aria-label="Первый слайд" class="current"></button>
+           <button type="button" aria-label="Второй слайд"></button>
+           <button type="button" aria-label="Третий слайд"></button>
          </div>
         </div>
      </section>
@@ -97,9 +101,9 @@
             <h2 class="visually-hidden">О дизайн-студии «Нёрдс»</h2>
             <p class="intro">Мы — маленькая, но гордая <br> дизайн-студия из Краснодара.</p>
             <p class="our-values">
-            Исповедуем принципы минимализма и чистоты.
-            Ставим математический расчет <br> превыше креатива.
-            Работаем не покладая рук, как роботы.
+             Исповедуем принципы минимализма и чистоты.
+             Ставим математический расчет <br> превыше креатива.
+             Работаем не покладая рук, как роботы.
             </p>
             <p class="list-orders-title">Выполняем заказы на разработку:</p>
             <ul class="list-orders">
@@ -109,14 +113,14 @@
             </ul>
           </div>
          <div class="features">
-           <table>
+           <table class="features-table">
              <h2 class="visually-hidden">Преимущества</h2>
              <img src="img/nerds-colored-logo.png" width="360" height="208" alt="Нёрдс лого" class="features-logo">
              <caption>с 2004 года любим точность во всем:</caption>
              <tr>
-               <td class="feature-value">146%</td>
-               <td class="feature-value">100%</td>
-               <td class="feature-value">50%</td>
+               <td class="feature-value">146</td>
+               <td class="feature-value">100</td>
+               <td class="feature-value">50</td>
              <tr>
              <tr>
                <td class="feature-item">Уровень <br> самоотдачи</td>
@@ -131,25 +135,25 @@
        <div class="container">
          <h2 class="visually-hidden">Клиенты</h2>
          <ul class="clients-item-list">
-             <li class="clients-item client-htmlacademy">
-               <a href="https://htmlacademy.ru/intensive/htmlcss">
+            <li class="clients-item client-htmlacademy">
+             <a href="https://htmlacademy.ru/intensive/htmlcss">
                <img src="img/clients/HTMLacademy.svg" width="199" height="67.82" alt="Логотип «HTML academy»">
-               </a>
+             </a>
             </li>
             <li class="clients-item client-borodinski">
-              <a>
-              <img src="img/clients/Borodinski.svg" width="209" height="90" alt="Логотип «Borodinski»">
-              </a>
+             <a>
+               <img src="img/clients/Borodinski.svg" width="209" height="90" alt="Логотип «Borodinski»">
+             </a>
             </li>
             <li class="clients-item client-pink">
-              <a>
-              <img src="img/clients/Pink.svg" width="185" height="52" alt="Логотип «Pink»">
-              </a>
+             <a>
+               <img src="img/clients/Pink.svg" width="185" height="52" alt="Логотип «Pink»">
+             </a>
             </li>
             <li class="clients-item client-mishka">
-              <a>
-              <img src="img/clients/Mishka.svg" width="173" height="84" alt="Логотип «Mishka»">
-              </a>
+             <a>
+               <img src="img/clients/Mishka.svg" width="173" height="84" alt="Логотип «Mishka»">
+             </a>
             </li>
          </ul>
        </div>
@@ -163,10 +167,10 @@
            <div class="contacts-wreapper">
              <h2 class="visually-hidden">Контактная информация</h2>
              <h3>NЁRDS DESIGN STUDIO</h3>
-             <p>191186, Санкт-Петербург, <br>
+             <p class="adress">191186, Санкт-Петербург, <br>
                ул. Б. Конюшенная, д. 19/8</p>
              <p class="phone">тел. <a class="contacts-phone" href="+78122757575">+7 (812) 275-75-75</a></p>
-             <button type="button" class="button">НАПИШИТЕ НАМ</button>
+             <a class="button contact-us-link" href="contactus.html">НАПИШИТЕ НАМ</a>
            </div>
          </div>
        </div>
@@ -206,10 +210,13 @@
        </p>
        <p class="popup-item popup-item-text">
          <label for="letter">Текст письма:</label><br>
-         <textarea id="letter" name="letter" rows="3">В свободной форме</textarea>
+         <textarea id="letter" name="letter" rows="3" placeholder="В свободной форме"></textarea>
        </p>
          <button type="button" class="button popup-send" aria-label="Отправить">Отправить</button>
      </form>
     </section>
+  
+    <script src="popup.js"></script>
+
   </body>
 </html>

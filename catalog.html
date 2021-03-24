@@ -19,10 +19,10 @@
           <img src="img/nerds-logo.svg" width="159.87" height="65.02" alt="Логотип дизайн-студии «Нёрдс»">
        </a>
        <ul class="site-navigation">
-        <li class="nav-item"><a class="curent" href="blank.html">СТУДИЯ</a></li>
-        <li class="nav-item"><a class="curent" href="blank.html">КЛИЕНТЫ</a></li>
-        <li class="nav-item"><a class="curent" href="catalog.html">МАГАЗИН</a></li>
-        <li class="nav-item"><a class="curent" href="blank.html">КОНТАКТЫ</a></li>
+         <li class="nav-item"><a class="curent" href="blank.html">СТУДИЯ</a></li>
+         <li class="nav-item"><a class="curent" href="blank.html">КЛИЕНТЫ</a></li>
+         <li class="nav-item nav-item-current"><a class="curent" href="catalog.html">МАГАЗИН</a></li>
+         <li class="nav-item"><a class="curent" href="blank.html">КОНТАКТЫ</a></li>
        </ul>
        <a href="blank.html" class="user-navigation cart-link">
         <span>КОРЗИНА</span>
@@ -62,16 +62,16 @@
              <legend>Сетка:</legend>
              <ul>
                <li class="filter-option filter-radio">
-                 <input class="visually-hidden filter-input-radio filter-input" type="radio" name="grid-group" value="adaptive" id="responsive-grid" checked>
-                 <label for="filter-responsive-grid">Адаптивная</label>
+                 <input class="visually-hidden filter-input-radio filter-input" type="radio" name="grid-group" value="responsive-grid" id="responsive" checked>
+                 <label for="responsive">Адаптивная</label>
                </li>
                <li class="filter-option filter-radio">
-                 <input class="visually-hidden filter-input-radio filter-input" type="radio" name="grid-group" value="adaptive" id="fixed-grid">
-                 <label for="filter-fixed-grid">Фиксированная</label>
+                 <input class="visually-hidden filter-input-radio filter-input" type="radio" name="grid-group" value="fixed-grid" id="fixed">
+                 <label for="fixed">Фиксированная</label>
                </li>
                <li class="filter-option filter-radio">
-                 <input class="visually-hidden filter-input-radio filter-input" type="radio" name="grid-group" value="adaptive" id="fluid-grid">
-                 <label for="filter-fluid-grid">Резиновая</label>
+                 <input class="visually-hidden filter-input-radio filter-input" type="radio" name="grid-group" value="fluid-grid" id="fluid">
+                 <label for="fluid">Резиновая</label>
                </li>
              </ul>
            </fieldset>
@@ -108,12 +108,12 @@
            <h3>Сортировать:</h3>
            <div class="sort">
              <ul class="sort-list">
-               <li><a href="#">По цене</a></li>
-               <li><a href="#">По типу</a></li>
-               <li><a href="#">По названию</a></li>
+               <li class="sort-list-item sort-list-item-current"><a href="#">По цене</a></li>
+               <li class="sort-list-item"><a href="#">По типу</a></li>
+               <li class="sort-list-item"><a href="#">По названию</a></li>
              </ul>
              <ul class="sort-list-value">
-               <li class="more-to-less">
+               <li class="more-to-less more-to-less-current">
                  <a href="#"><span class="visually-hidden">От большего к меньшему </span></a>
                 </li>
                <li class="less-to-more">
@@ -125,8 +125,7 @@
          <div class="catalog-cards">
            <h3 class="visually-hidden">Список готовых шаблонов</h2>
            <ul class="catalog-cards-list">
-             <li class="catalog-cards-item">
-               <div class="circle-decoration"></div>
+             <li class="catalog-cards-item circle-decoration">
                <img src="img/template/img-sedona.jpg" width="358" height="578" alt="шаблон «Sedona»" class="catalog-cards-image">
                <div class="card-description">
                  <a href="blank.html" class="catalog-cards-name">
@@ -140,8 +139,7 @@
                  </p>
                </div>
              </li>
-             <li class="catalog-cards-item">
-               <div class="circle-decoration"></div>
+             <li class="catalog-cards-item circle-decoration">
                <img src="img/template/img-pink.jpg" width="358" height="578" alt="шаблон «PINK APP»" class="catalog-cards-image">
                <div class="card-description">
                  <a href="blank.html" class="catalog-cards-name">
@@ -155,8 +153,7 @@
                  </p>
                </div>
              </li>
-             <li class="catalog-cards-item">
-               <div class="circle-decoration"></div>
+             <li class="catalog-cards-item circle-decoration">
                <img src="img/template/img-barbershop.jpg" width="358" height="578" alt="шаблон «BARBERSHOP»" class="catalog-cards-image">
                <div class="card-description">
                  <a href="blank.html" class="catalog-cards-name">
@@ -170,8 +167,7 @@
                  </p>
                </div>
              </li>
-             <li class="catalog-cards-item">
-               <div class="circle-decoration"></div>
+             <li class="catalog-cards-item circle-decoration">
                <img src="img/template/img-mishka.jpg" width="358" height="578" alt="шаблон «MISHKA»" class="catalog-cards-image">
                <div class="card-description">
                  <a href="blank.html" class="catalog-cards-name">
@@ -185,8 +181,7 @@
                  </p>
                </div>
              </li>
-             <li class="catalog-cards-item">
-               <div class="circle-decoration"></div>
+             <li class="catalog-cards-item circle-decoration">
                <img src="img/template/img-aplus.jpg" width="358" height="578" alt="шаблон «A PLUS»" class="catalog-cards-image">
                <did class="card-description">
                  <a href="blank.html" class="catalog-cards-name">
@@ -200,8 +195,7 @@
                   </p>
                </did>
              </li>
-             <li class="catalog-cards-item">
-               <div class="circle-decoration"></div>
+             <li class="catalog-cards-item circle-decoration">
                <img src="img/template/img-kvast.jpg" width="358" height="578" alt="шаблон «КВАСТ»" class="catalog-cards-image">
                <div class="card-description">
                  <a href="blank.html" class="catalog-cards-name">
@@ -246,7 +240,7 @@
              <p>191186, Санкт-Петербург, <br>
                ул. Б. Конюшенная, д. 19/8</p>
              <p class="phone">тел. <a class="contacts-phone" href="+78122757575">+7 (812) 275-75-75</a></p>
-             <button type="button" class="button">НАПИШИТЕ НАМ</button>
+             <a class="button contact-us-link" href="blank.html">НАПИШИТЕ НАМ</a>
            </div>
          </div>
        </div>
