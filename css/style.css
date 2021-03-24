@@ -31,6 +31,7 @@
 
   --popup-basic: #D7DCDE;
   --popup-hover: #B4B9BB;
+  --grey-element: #C1C1C1;
 
   --basic-light-red: #FB565A;
   --basic-medium-red: #E74246;
@@ -196,14 +197,20 @@ a.user-navigation:hover,
 a.user-navigation:focus {
   color: var(--basic-light-red);
 }
-
 .site-navigation a:active,
 a.user-navigation:active {
   color: rgba( 0, 1, 1, 0.3);
 }
 .nav-item-current a {
-  padding-bottom: 19px;
-  border-bottom: 2px solid var(--basic-light-red);
+  position: relative;
+}
+.nav-item-current a::before {
+  content: "";
+  position: absolute;
+  top: 38px;
+  height: 2px;
+  width: 100%;
+  background-color: var(--basic-light-red);
 }
 
 /* Login link */
@@ -274,6 +281,7 @@ a.user-navigation:active {
 }
 .slider-item .button {
   display: inline-block;
+
   padding: 0;
   margin: 0;
   padding: 16px 54px;
@@ -318,7 +326,7 @@ a.user-navigation:active {
   width: 8px;
   height: 8px;
   z-index: 50;
-  border: 2px solid #C1C1C1;
+  border: 2px solid var(--grey-element);
 }
 .slide {
   display: none;
@@ -619,7 +627,7 @@ table .feature-item {
 }
 .map {
   min-height: 416px;
-  min-width: 1440px;
+  width: 100%;
   display: block;
   text-align: center;
 }
